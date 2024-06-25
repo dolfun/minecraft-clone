@@ -1,6 +1,6 @@
 #include "Texture.h"
 #include "TextureLoader.h"
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <iostream>
 
 Texture::Texture(std::string path) {

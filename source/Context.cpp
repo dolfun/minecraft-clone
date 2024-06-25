@@ -21,11 +21,7 @@ Context::Context(const Config& config) {
     glfwMakeContextCurrent(window);
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
-    glewExperimental = true;
-    if (glewInit() != GLEW_OK) {
-        std::cerr << "Failed to initialize glew." << std::endl;
-        glfwTerminate();
-    }
+    gladLoadGL();
 
     if (GL_EXT_texture_filter_anisotropic || GL_ARB_texture_filter_anisotropic)
         std::cout << "Anisotropic Filtering is available." << std::endl;

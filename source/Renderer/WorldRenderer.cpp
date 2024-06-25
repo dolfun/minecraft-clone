@@ -1,5 +1,5 @@
 #include "WorldRenderer.h"
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include "../Utility/Clock.h"
 #include <iostream>
 

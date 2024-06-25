@@ -1,5 +1,5 @@
 #include "RenderEngine.h"
-#include <GL/glew.h>
+#include <glad/glad.h>
 
 void RenderEngine::renderChunk(Chunk& chunk) {
     world_renderer.addChunk(chunk);

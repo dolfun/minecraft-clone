@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <GL/glew.h>
+#include <glad/glad.h>
 
 void Shader::bindProgram() {
     glUseProgram(shader_program);

@@ -1,6 +1,6 @@
 #include "TextureArray.h"
 #include "TextureLoader.h"
-#include <GL/glew.h>
+#include <glad/glad.h>
 #include <iostream>
 
 void TextureArray::addTexturePath(std::string path) {

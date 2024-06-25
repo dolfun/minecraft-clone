@@ -2,7 +2,7 @@
 #ifndef GLDEBUG_H_INCLUDED
 #define GLDEBUG_H_INCLUDED
 
-#include <GL/glew.h>
+#include <glad/glad.h>
 
 GLenum glCheckError_(const char* file, int line);
 #define glCheckError() glCheckError_(__FILE__, __LINE__)

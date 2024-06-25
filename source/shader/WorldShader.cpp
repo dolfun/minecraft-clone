@@ -1,5 +1,5 @@
 #include "WorldShader.h"
-#include <GL/glew.h>
+#include <glad/glad.h>
 
 WorldShader::WorldShader() {
     std::string vertex_shader_path("resources/shaders/WorldShader.vs"), fragment_shader_path("resources/shaders/WorldShader.fs");
