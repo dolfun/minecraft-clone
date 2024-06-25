@@ -1,6 +1,5 @@
 # Minecraft-Clone
 
-A minecraft clone made using OpenGL.
 This was my first C++ project (Jan 2020).
 
 ## Features
