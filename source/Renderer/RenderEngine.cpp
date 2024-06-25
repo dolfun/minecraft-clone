@@ -6,7 +6,7 @@ void RenderEngine::renderChunk(Chunk& chunk) {
 }
 
 void RenderEngine::render(const Camera& camera) {
-    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+    glClearColor(0.40f, 0.76f, 0.96f, 1.0f);
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
 
