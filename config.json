@@ -1,7 +1,7 @@
 {
-    "WindowWidth" : 1366,
-    "WindowHeight" : 768,
-    "Fullscreen" : false,
+    "WindowWidth" : 1920,
+    "WindowHeight" : 1080,
+    "Fullscreen" : true,
     "Title" : "Minecraft",
     "GL_MAJOR_VERSION" : 4,
     "GL_MINOR_VERSION" : 0,
@@ -11,5 +11,5 @@
     "debug" : false,
 
     "FOV" : 90.0,
-    "RenderDistance" : 5
+    "RenderDistance" : 8
 }

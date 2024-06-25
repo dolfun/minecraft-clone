@@ -14,7 +14,9 @@ void OverworldGenerator::generateChunk(Chunk& chunk) {
 
             int global_x = chunk.position.x * chunk_size + x;
             int global_z = chunk.position.z * chunk_size + z;
-            float height = glm::perlin(glm::vec2(static_cast<float>(global_x) / static_cast<float>(chunk_size), static_cast<float>(global_z) / static_cast<float>(chunk_size)));
+
+            glm::vec2 p = glm::vec2(static_cast<float>(global_x), static_cast<float>(global_z)) / static_cast<float>(chunk_size);
+            float height = glm::perlin(p) + 0.5 * glm::perlin(p / 2.0f);
 
             int y_terrain = glm::abs(height) * 20;
             for (int i = 1; i < y_terrain; ++i)

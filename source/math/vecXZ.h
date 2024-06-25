@@ -18,7 +18,7 @@ namespace std {
             auto hash1 = hasher(vect.x);
             auto hash2 = hasher(vect.z);
 
-            return std::hash<decltype(vect.x)>{}((hash1 ^ hash2) >> 2);
+            return std::hash<decltype(vect.x)>{}(hash1 ^ (hash2 << 16));
         }
     };
 }

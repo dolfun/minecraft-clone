@@ -6,7 +6,7 @@
 
 namespace WorldConstants {
     constexpr int chunk_size = 16;
-    constexpr int chunk_column_height = 16;
+    constexpr int chunk_column_height = 2;
     constexpr int texture_size = 16;
 }
 
