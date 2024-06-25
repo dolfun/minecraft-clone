@@ -5,7 +5,7 @@ This was my first C++ project (Jan 2020).
 ## Features
 
 - Cross platform: Windows and Linux
-- Uses a greedy mesh builder for voxels
+- Uses a greedy mesh builder for chunks
 - Infinite world with world generation using perlin noise
 
 ## Screenshot
