@@ -1,0 +1,11 @@
+{
+    "BlockID" : 6,
+    "BlockName" : "leaf",
+    "MeshType" : 0,
+    "ShaderType" : 0,
+    "Opacity" : true,
+
+    "Texture1" : {
+        "All" : "leaf"
+    }
+}

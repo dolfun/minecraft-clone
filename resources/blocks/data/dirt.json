@@ -1,0 +1,11 @@
+{
+    "BlockID" : 2,
+    "BlockName" : "dirt",
+    "MeshType" : 0,
+    "ShaderType" : 0,
+    "Opacity" : true,
+
+    "Texture1" : {
+        "All" : "dirt"
+    }
+}

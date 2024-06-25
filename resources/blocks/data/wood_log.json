@@ -1,0 +1,13 @@
+{
+    "BlockID" : 5,
+    "BlockName" : "wood_log",
+    "MeshType" : 0,
+    "ShaderType" : 0,
+    "Opacity" : true,
+
+    "Texture3" : {
+        "Top" : "wood_log_top",
+        "Side" : "wood_log_side",
+        "Bottom" : "wood_log_top"
+    }
+}

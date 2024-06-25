@@ -1,0 +1,13 @@
+{
+    "BlockID" : 1,
+    "BlockName" : "grass",
+    "MeshType" : 0,
+    "ShaderType" : 0,
+    "Opacity" : true,
+
+    "Texture3" : {
+        "Top" : "grass_top",
+        "Side" : "grass_side",
+        "Bottom" : "dirt"
+    }
+}

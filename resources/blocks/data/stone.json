@@ -1,0 +1,11 @@
+{
+    "BlockID" : 3,
+    "BlockName" : "stone",
+    "MeshType" : 0,
+    "ShaderType" : 0,
+    "Opacity" : true,
+
+    "Texture1" : {
+        "All" : "stone"
+    }
+}
