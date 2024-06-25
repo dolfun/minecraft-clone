@@ -9,7 +9,7 @@ class TextureArray {
 public:
     TextureArray() = default;
     void addTexturePath(std::string path);
-    void loadAllTextures(int tex_width, int tex_height, int mipmap, float anisotropic_filtering);
+    void loadAllTextures(int tex_width, int tex_height);
     void bindTextureArray() const;
     int getCurrentIndex() const;
 

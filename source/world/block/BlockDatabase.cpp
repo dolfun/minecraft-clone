@@ -16,10 +16,10 @@ BlockDatabase& BlockDatabase::get() {
     return database;
 }
 
-void BlockDatabase::loadTextures(int mipmap, int anisotropic_filtering) {
+void BlockDatabase::loadTextures() {
     for (int i = 0; i < blocks.size(); ++i)
         blocks[i]->loadTextures();
-    texture_array.loadAllTextures(WorldConstants::texture_size, WorldConstants::texture_size, mipmap, anisotropic_filtering);
+    texture_array.loadAllTextures(WorldConstants::texture_size, WorldConstants::texture_size);
 }
 
 const BlockData& BlockDatabase::getBlockData(BlockID ID) const {

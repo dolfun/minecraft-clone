@@ -9,7 +9,7 @@
 class BlockDatabase {
 public:
     static BlockDatabase& get();
-    void loadTextures(int mipmap, int anisotropic_filtering);
+    void loadTextures();
     const BlockData& getBlockData(BlockID ID) const;
     TextureArray& getTexArray();
 

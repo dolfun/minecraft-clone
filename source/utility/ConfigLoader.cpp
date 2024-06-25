@@ -25,12 +25,7 @@ Config loadConfig(std::string filename) {
         config.window_x = document["WindowWidth"].GetInt();
         config.window_y = document["WindowHeight"].GetInt();
         config.fullscreen = document["Fullscreen"].GetBool();
-        config.title = document["Title"].GetString();
-        config.gl_major_version = document["GL_MAJOR_VERSION"].GetInt();
-        config.gl_minor_version = document["GL_MINOR_VERSION"].GetInt();
         config.MSAA = document["MSAA"].GetInt();
-        config.mipmap = document["Mipmap"].GetInt();
-        config.anisotropic_filtering = document["AnisotropicFiltering"].GetFloat();
         config.debug = document["debug"].GetBool();
 
         config.fov = document["FOV"].GetFloat();

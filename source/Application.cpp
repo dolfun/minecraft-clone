@@ -5,7 +5,7 @@
 #include <ctime>
 
 Application::Application(const Config& config) : config(config), context(config), camera(config), debug_key(Key::KEY_G, 0.2f) {
-    BlockDatabase::get().loadTextures(config.mipmap, config.anisotropic_filtering);
+    BlockDatabase::get().loadTextures();
     Random::setSeed(static_cast<unsigned int>(std::time(nullptr)));
     pushState<StatePlaying>(*this, config, camera);
     is_popstate = false;

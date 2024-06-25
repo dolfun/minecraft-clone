@@ -7,12 +7,12 @@ Context::Context(const Config& config) {
         std::cerr << "Failed to initialize GLFW." << std::endl;
     
     if (config.MSAA) glfwWindowHint(GLFW_SAMPLES, config.MSAA);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, config.gl_major_version);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, config.gl_minor_version);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     if (config.debug) glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, true);
 
-    window = glfwCreateWindow(config.window_x, config.window_y, config.title.c_str(), config.fullscreen ? glfwGetPrimaryMonitor() : NULL, NULL);
+    window = glfwCreateWindow(config.window_x, config.window_y, "minecraft-clone", config.fullscreen ? glfwGetPrimaryMonitor() : NULL, NULL);
 
     if (window == NULL) {
         std::cerr << "Failed to create GLFW window." << std::endl;
@@ -22,10 +22,6 @@ Context::Context(const Config& config) {
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
     gladLoadGL();
-
-    if (GL_EXT_texture_filter_anisotropic || GL_ARB_texture_filter_anisotropic)
-        std::cout << "Anisotropic Filtering is available." << std::endl;
-    else std::cout << "Anisotropic Filtering is not available on your device." << std::endl;
 
     if (config.debug) {
         std::cout << "Debug mode is on." << std::endl;
