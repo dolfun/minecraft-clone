@@ -1,7 +1,7 @@
 {
     "WindowWidth" : 1366,
     "WindowHeight" : 768,
-    "Fullscreen" : true,
+    "Fullscreen" : false,
     "Title" : "Minecraft",
     "GL_MAJOR_VERSION" : 4,
     "GL_MINOR_VERSION" : 0,

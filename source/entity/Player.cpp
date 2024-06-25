@@ -1,5 +1,4 @@
 #include "Player.h"
-#include <iostream>
 
 Player::Player() : Entity(glm::vec3(0.0f), glm::vec3(0.0f)) {
     position = glm::vec3(0.0f, 10.0f, 0.0f);
@@ -32,8 +31,7 @@ void Player::setPosition(glm::vec3 position) {
 
 void Player::move(PlayerMovement direction) {
     float speed_factor = 1.0f;
-    if (is_sprinting) speed_factor = 50.0f;
-    else speed_factor = 20.0f;
+    if (is_sprinting) speed_factor = 5.0f;
     
     if (direction == PlayerMovement::forward)
         velocity += front * speed * speed_factor;

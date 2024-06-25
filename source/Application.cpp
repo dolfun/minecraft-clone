@@ -27,7 +27,11 @@ void Application::start() {
         handleInput();
         state.handleInput();
 
-        state.update(Clock::getDeltaTime());
+        static float prev_time = glfwGetTime();
+        float curr_time = glfwGetTime();
+        float dt = curr_time - prev_time;
+        prev_time = curr_time;
+        state.update(dt);
         camera.update();
 
         state.render(render_engine);
