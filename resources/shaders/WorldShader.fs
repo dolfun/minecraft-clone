@@ -8,6 +8,7 @@ in vec3 block_index;
 in vec3 orientation;
 
 uniform sampler2DArray texture_array;
+uniform vec3 camera_pos;
 
 vec4 getFragColor();
 
@@ -36,5 +37,13 @@ vec4 getFragColor() {
         }
     }
 
-    return texture(texture_array, vec3(my_tex_coord, index));
+    vec3 color = texture(texture_array, vec3(my_tex_coord, index)).rgb;
+
+    float t = distance(camera_pos, pos);
+    float b = 0.02;
+    float fog_amount = 1.0 - exp(-t * b);
+    vec3 fog_color = vec3(0.40, 0.76, 0.96);
+    color = mix(color, fog_color, fog_amount);
+
+    return vec4(color, 1.0);
 }

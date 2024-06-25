@@ -12,6 +12,7 @@ void WorldRenderer::render(const Camera& camera) {
 
     world_shader.setViewMatrix(camera.getViewMatrix());
     world_shader.setProjectionMatrix(camera.getProjectionMatrix());
+    world_shader.setCameraPos(camera.position);
 
     glEnable(GL_CULL_FACE);
     for (auto chunk : chunks) {

@@ -20,6 +20,10 @@ void WorldShader::setProjectionMatrix(const glm::mat4& projection) const {
     setMat4("projection", projection);
 }
 
+void WorldShader::setCameraPos(const glm::vec3& camera_pos) const {
+    setVec3("camera_pos", camera_pos);
+}
+
 void WorldShader::bindTextureArray() const {
     setInt("texture_array", 0);
 }

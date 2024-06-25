@@ -10,6 +10,7 @@ public:
     void setModelMatrix(const glm::mat4& model) const;
     void setViewMatrix(const glm::mat4& view) const;
     void setProjectionMatrix(const glm::mat4& projection) const;
+    void setCameraPos(const glm::vec3& camera_pos) const;
     void bindTextureArray() const;
 };
 
